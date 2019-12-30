@@ -1,0 +1,14 @@
+/.metadata/
+/.settings/
+/.vscode/
+
+.recommenders/
+*.properties
+/build/
+.classpath
+.project
+build.xml
+.class
+
+/PropertyFileCleaner/.metadata/
+/bin/

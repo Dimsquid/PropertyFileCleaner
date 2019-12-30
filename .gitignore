@@ -1,0 +1,9 @@
+/.metadata/
+
+.recommenders/
+*.properties
+/build/
+.classpath
+.project
+build.xml
+.class

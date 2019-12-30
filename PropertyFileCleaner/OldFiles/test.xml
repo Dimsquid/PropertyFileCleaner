@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="PropertyFileCleaner" default="use" basedir=".">
+
+	<property name="build.dir" value="build" />
+	<property name="app.classes.dir" value="${build.dir}/application/classes" />
+	<property name="app.jar.dir" value="${build.dir}/application/jar" />
+
+
+	<target name="use" description="use the task">
+		<taskdef name="PropertyFileCleanerTask" classname="com.bis.propertyfilecleaner.PropertyFileCleanerTask" classpath="${app.jar.dir}/PropertyFileCleaner.jar;PropertyFileCleaner/lib/apache-ant-1.8.2.jar" />
+		<PropertyFileCleanerTask outDir="MYDIR">
+
+			<fileset dir="properties" includes="**/*.properties" />
+
+		</PropertyFileCleanerTask>
+	</target>
+
+</project>
